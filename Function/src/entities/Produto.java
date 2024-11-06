@@ -18,17 +18,6 @@ public class Produto {
         this.nome = nome;
     }
 
-    // Reference method com metodo estatico
-    // Pelo fato de ser um metodo estatico ele deve recer um obj como parametro
-    public static void staticUpdatePrice(Produto p) {
-        p.setValor(p.getValor() * 1.1);
-    }
-
-    // Reference method com metodo nao estatico
-    // Pelo fato de ser nao estatico ele nao necessita de parametro
-    public void nonStaticUptadePrice() {
-        setValor(getValor() * 1.1);
-    }
 
     public Double getValor() {
         return valor;
